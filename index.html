@@ -1,17 +1,28 @@
 
 <html>
-<head></head>
-<body>
-<h1 id="demo">bonjour kaliman</h1>
-  <h2>AIDE web</h2>
-<button onclick="myFun()">tester</button>
-<p>test diff</p>
+  <head>
+
+
+<script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js">
+</script>
+  </head>
+  <body>
+	<h1 id="demo">bonjour kaliman</h1>
+	<h2>AIDE web</h2>
+	<button onclick="myFun()">tester</button>
+	<p>test diff</p>
 
 <script>
-document.getElementById('demo').innerHTML='test99';
-function myFun(){
-alert('for test');
-}
+  var arr=["0","1","2","3",4,"t"]
+//arr.forEach()
+var txt=""
+arr.forEach(v=>{ txt=txt+v+'<br>'
+document.getElementById('demo').innerHTML=txt
+})
+//arr.map()
+//arr.map()
+
 </script>
-</body>
+
+  </body>
 </html>
